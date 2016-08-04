@@ -15,7 +15,7 @@ import {
 
 const initialState = fromJS({
   updateSuccessful : true,
-  valueA: 'a',
+  valueA: '',
   valueB: 0,
   valueC: 0,
   valueD: '',
@@ -37,6 +37,7 @@ function homePageReducer(state = initialState, action) {
       return state
       	.set('valueC', action.val)
     case EDITORD_VALUE:
+    console.log("Val D: ", action.val)
       return state
       	.set('valueD', action.val)
     case EDITORE_VALUE:

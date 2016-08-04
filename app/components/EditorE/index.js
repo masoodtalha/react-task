@@ -12,9 +12,9 @@ import SelectBox from 'components/SelectBox';
 
 var options = ['option 1', 'option 2', 'option 3', 'option 4'];
 
-function EditorD() {
+function EditorD(props) {
   return (
-  	<SelectBox data = {options} />
+  	<SelectBox data = {options} updateValue={props.updateEditorE_VALUE} valD = {props.valD} valE = {props.valE} />
   );
 }
 

@@ -29,7 +29,6 @@ export class HomePage extends React.Component { // eslint-disable-line react/pre
 
 
   render() {
-  	console.log("hello World", this.props);
 
     return (
 

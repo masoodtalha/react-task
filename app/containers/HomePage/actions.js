@@ -21,7 +21,6 @@ export function updateEditorA_VALUE(val) {
 }
 
 export function updateEditorB_VALUE(val) {
-  console.log("I am in ValueB Action")
   return {
     type: EDITORB_VALUE,
     val
@@ -29,21 +28,22 @@ export function updateEditorB_VALUE(val) {
 }
 
 export function updateEditorC_VALUE(val) {
-  console.log("I am in ValueC Action")
   return {
     type: EDITORC_VALUE,
     val
   };
 }
 
-export function updateEditorD_VALUE() {
+export function updateEditorD_VALUE(val) {
   return {
     type: EDITORD_VALUE,
+    val
   };
 }
 
-export function updateEditorE_VALUE() {
+export function updateEditorE_VALUE(val) {
   return {
     type: EDITORE_VALUE,
+    val
   };
 }
